@@ -1,34 +1,47 @@
-# Environment variables
+# .gitignore for PineconeQueryAgent
+# This file specifies intentionally untracked files that Git should ignore
+# These are typically local configuration files, temporary files, and build artifacts
+
+# Environment variables - Contains sensitive API keys and credentials
+# Never commit these to version control for security reasons
 .env
 
-# Virtual environment
+# Virtual environment directories - Contains installed dependencies
+# These are large and should be recreated locally rather than committed
 venv/
 env/
 ENV/
 
-# Python cache files
+# Python cache files - Generated during execution
+# These are temporary files that improve performance but aren't needed in version control
 __pycache__/
-*.py[cod]
-*$py.class
+*.py[cod]     # Python compiled files (.pyc, .pyo, .pyd)
+*$py.class    # Python optimized bytecode
 .pytest_cache/
 
-# Distribution / packaging
+# Distribution / packaging - Build artifacts
+# Generated when packaging the application, not needed in source control
 dist/
 build/
 *.egg-info/
 
-# Jupyter Notebook
+# Jupyter Notebook - Checkpoint files
+# Temporary files created by Jupyter, not needed in version control
 .ipynb_checkpoints
 
-# VS Code
+# VS Code - Editor-specific settings
+# Local IDE configuration that shouldn't be shared between developers
 .vscode/
 
-# PyCharm
+# PyCharm - Editor-specific settings
+# Local IDE configuration that shouldn't be shared between developers
 .idea/
 
-# Streamlit
+# Streamlit - Local configuration and cache
+# User-specific Streamlit settings that shouldn't be shared
 .streamlit/
 
-# System files
-.DS_Store
-Thumbs.db 
+# System files - Operating system generated files
+# These are not part of the project and vary between systems
+.DS_Store      # macOS folder metadata
+Thumbs.db      # Windows thumbnail cache 

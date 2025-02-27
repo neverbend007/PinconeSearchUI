@@ -1,8 +1,27 @@
+# PineconeQueryAgent Requirements File
+# This file lists all the Python dependencies required to run the application.
+# Install these dependencies using: pip install -r requirements.txt
+
+# Web application framework for creating interactive data apps
 streamlit==1.32.0
+
+# Vector database client for storing and querying embeddings
 pinecone-client==3.0.0
+
+# OpenAI API client for accessing GPT models and embeddings
 openai==1.12.0
+
+# LangChain integration with OpenAI models
 langchain-openai==0.0.5
+
+# LangChain integration with Pinecone vector database
 langchain-pinecone==0.1.2
+
+# Anthropic API client for accessing Claude models
 anthropic==0.18.0
+
+# Library for loading environment variables from .env files
 python-dotenv==1.0.0
+
+# HTTP library for making API requests
 requests==2.31.0
