@@ -2,7 +2,8 @@
 
 A Streamlit application that allows you to ask questions and get comprehensive answers based on information stored in your Pinecone vector database. The application uses multiple AI models to generate answers, including OpenAI's GPT-4, Anthropic's Claude, and Deepseek.
 
----
+![image](https://github.com/user-attachments/assets/2fd514d3-aeb3-4d5d-9e7e-dfd348131e7b)
+
 
 ## Table of Contents
 
